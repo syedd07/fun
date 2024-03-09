@@ -47,7 +47,6 @@ body {
     position: relative;
 }
 
-
 .disclaimer {
     position: absolute;
     bottom: -100px; /* Adjust the bottom position as needed */
@@ -62,7 +61,13 @@ body {
     }
 }
 
-
+.author {
+    position: relative;
+    bottom: -150px;
+    color: rgb(24, 211, 27);
+    width: -200%;
+    text-align: center;
+}
 
 .container {
     text-align: center;

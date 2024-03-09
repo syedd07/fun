@@ -5,13 +5,23 @@ const inputContainer = document.querySelector('.input-container');
 const disclaimer = document.querySelector('.disclaimer');
 
 submitNameButton.addEventListener('click', () => {
+    submitName();
+});
+
+nameInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        submitName();
+    }
+});
+
+function submitName() {
     const name = nameInput.value;
     if (name.trim() !== '') {
         showQuestion(name);
     } else {
         alert('Please enter your name.');
     }
-});
+}
 
 function showQuestion(name) {
     inputContainer.style.display = 'none'; // Hide input container
@@ -38,9 +48,7 @@ function showQuestion(name) {
         alert("FINALLY YOU ACCEPTED 🤡");
         restartGame();
     });
-    
-    };
-
+}
 
 function restartGame() {
     questionContainer.style.display = 'none'; // Hide question container

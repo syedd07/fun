@@ -47,19 +47,21 @@ body {
     position: relative;
 }
 
+
 .disclaimer {
     position: absolute;
-    bottom: -110px; /* Adjust the bottom position as needed */
+    bottom: -100px; /* Adjust the bottom position as needed */
     color: rgb(229, 46, 46);
-    width: 130%;
+    width: 100%;
     text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
     .disclaimer {
-        bottom: 20px; /* Adjust for larger screens like laptops */
+        bottom: -110px; /* Adjust for larger screens like laptops */
     }
 }
+
 
 
 .container {

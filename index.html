@@ -8,11 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="question">Are You GAY?</h1>
-        <button class="button" id="yes-button">YES! I AM </button>
-        <button class="button" id="no-button">NO</button>
+        <div class="input-container">
+            <input type="text" id="name-input" placeholder="Enter your name">
+            <button id="submit-name">Submit</button>
+            <strong class="disclaimer">This is just For the sake of entertainment. Try not to view it In a serious way and make an effort not to endeavor Self destruction!!</strong>
+        </div>
+        <div id="question-container" style="display: none;">
+            <!-- Question will be displayed here -->
+        </div>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

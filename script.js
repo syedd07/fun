@@ -35,6 +35,16 @@ function showQuestion(name) {
     });
 
     yesButton.addEventListener('click', () => {
-        alert("FINALLY YOU ACCEPTED");
+        alert("FINALLY YOU ACCEPTED 🤡");
+        restartGame();
     });
+    
+    };
+
+
+function restartGame() {
+    questionContainer.style.display = 'none'; // Hide question container
+    inputContainer.style.display = 'block'; // Show input container
+    disclaimer.style.display = 'block'; // Show disclaimer
+    nameInput.value = ''; // Clear input field
 }

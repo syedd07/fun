@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Fun</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="android-chrome-192x192" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 <body>
     <div class="container">
-        <h1 class="question">Are You GAY?</h1>
-        <button class="button" id="yes-button">YES! I AM </button>
-        <button class="button" id="no-button">NO</button>
+        <div class="input-container">
+            <input type="text" id="name-input" placeholder="Enter your name">
+            <button id="submit-name">Submit</button>
+            <strong class="disclaimer">This is just For the sake of entertainment. Try not to view it In a serious way and make an effort not to endeavor Self destruction!!</strong>
+        </div>
+        <div id="question-container" style="display: none;">
+            <!-- Question will be displayed here -->
+        </div>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

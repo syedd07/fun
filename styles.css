@@ -1,3 +1,19 @@
+/* Adjust image size for smaller screens */
+@media only screen and (max-width: 768px) {
+    img {
+        max-width: 100%; /* Set maximum width to 100% */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Adjust image size for larger screens */
+@media only screen and (min-width: 769px) {
+    img {
+        max-width: 80%; /* Set maximum width to 80% */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 body {
     background-color: #f0f0f0; /* Light gray color */
     font-family: Arial, sans-serif;
@@ -19,7 +35,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 14px;
-    margin-right: 10px;
+    margin-right: 1px;
     font-size: 16px;
 }
 
@@ -61,6 +77,13 @@ body {
     }
 }
 
+.author {
+    position: relative;
+    bottom: -150px;
+    color: rgb(24, 211, 27);
+    width: -200%;
+    text-align: center;
+}
 
 .container {
     text-align: center;
@@ -110,4 +133,12 @@ body {
 
 .button:hover {
     background-color: #25b42a ;
+}
+.gif-align {
+    width: 280px; /* Adjust the width as needed */
+    height: 150px; /* Automatically adjust the height */
+}
+
+.button {
+    margin-top:200px; /* Add some top margin to the buttons */
 }

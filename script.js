@@ -28,7 +28,7 @@ function showQuestion(name) {
     disclaimer.style.display = 'none'; // Hide disclaimer
 
     questionContainer.innerHTML = `
-        <h1 class="question">Hey ${name}, !!</h1>
+        <h1 class="question">Hey ${name} !!</h1>
         <img class="gif gif-align" src="src/why are.gif" alt="GIF">
         <button class="button" id="yes-button">YES! I AM ☠️ </button>
         <button class="button" id="no-button"> NO! AM NOT 😭</button>
